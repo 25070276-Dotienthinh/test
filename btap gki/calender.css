@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f6f7fb;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.logo {
+    color: #ff4d4f;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu a {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.menu .active {
+    color: #ff4d4f;
+    border-bottom: 2px solid #ff4d4f;
+}
+
+/* RIGHT */
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.support {
+    background: pink;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    padding: 20px;
+}
+
+/* CALENDAR */
+.calendar {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+
+.day {
+    background: white;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.day:hover {
+    background: #ffecec;
+}
+
+.day.active {
+    border: 2px solid red;
+}
+
+/* DOT EVENT */
+.dot {
+    width: 6px;
+    height: 6px;
+    background: pink;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* EVENT PANEL */
+.event-panel {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.event-card {
+    background: #f8f9fc;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.event-time {
+    background: pink;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.event-title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.event-btn {
+    background: #eaeaea;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}

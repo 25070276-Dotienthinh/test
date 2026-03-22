@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="event-panel">
+    <h2 id="title"></h2>
+    <p id="price"></p>
+    <button onclick="back()">Quay lại</button>
+</div>
+
+<script>
+let e = JSON.parse(localStorage.getItem("event"));
+title.innerText = e.title;
+price.innerText = e.price;
+
+function back(){
+    window.location="index.html";
+}
+</script>
+
+</body>
+</html>

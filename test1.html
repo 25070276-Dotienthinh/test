@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi" >
+<head>
+    <title>Multiple-Line Input Control</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: auto;
+        }
+        h1 {
+            margin-left: 1cm;
+            border-left-width: 10px;
+            border-left-style: solid;
+            border-left-color: #333;
+            padding-left: 1cm;
+            border-right-width: 10px;
+            border-right-style: solid;
+            border-right-color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"], textarea {
+            width: 80%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        input[option] {
+            margin-top: 90px;
+            color: #ff0000;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+            height: 16px;
+            width: 16px;
+        }
+        select {
+            width: 200px;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        option {
+            padding: 8px;
+        }
+        span {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body> 
+    <form>
+        First Name : <input type = "text" name = "firstName" /> <br >
+        Last Name : <input type = "text" name = "lastName" />
+    </form>
+    <form>
+        Description : <br /> 
+        <textarea rows = "5" cols = "50" name = "description"> Enter 
+        description here... </textarea> 
+    </form>
+    <form> 
+        <input type = "checkbox" name = "maths" value = "on"> Maths
+        <input type = "checkbox" name = "physics" value = "on"> Physics
+    </form>
+    <form> 
+        <select name = "dropdown"> 
+        <option value = "Maths" >Maths</option> 
+        <option value = "Physics">Physics</option>
+        </select>
+    </form>
+    <h1>Multiple<span>-</span>Line Input Control</h1>
+</body>
+</html>

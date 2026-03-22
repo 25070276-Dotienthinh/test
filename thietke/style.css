@@ -1,0 +1,52 @@
+body { font-family: Arial; background:#f5f6fb; margin:0; }
+
+.header {
+    margin:15px; padding:15px;
+    background:white; border-radius:20px;
+    display:flex; justify-content:space-between;
+}
+
+.logo { color:red; font-weight:bold; }
+
+.wrapper { display:flex; padding:20px; gap:20px; }
+
+.calendar-box { flex:3; background:white; padding:20px; border-radius:20px; }
+
+.calendar-header {
+    display:flex; justify-content:space-between; align-items:center;
+}
+
+.weekdays, .calendar {
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:10px;
+}
+
+.day {
+    height:80px; background:#fafafa;
+    border-radius:15px; padding:10px;
+    cursor:pointer;
+}
+
+.day.active { border:2px solid red; }
+
+.event-panel {
+    flex:1; background:white;
+    padding:20px; border-radius:20px;
+}
+
+/* MODAL */
+.modal {
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.3);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content {
+    background:white;
+    padding:20px;
+    border-radius:15px;
+}

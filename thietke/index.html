@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>EventHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">EventHub</div>
+
+    <div class="menu">
+        <span>Trang chủ</span>
+        <span>Sự kiện</span>
+        <span class="active">Lịch</span>
+        <span>Liên hệ</span>
+    </div>
+
+    <div class="right">
+        <div>
+            <div id="clock"></div>
+            <small id="dateNow"></small>
+        </div>
+
+        <div id="userBox">
+            <button onclick="openModal()">Đăng nhập</button>
+        </div>
+
+        <div class="support">⚡</div>
+    </div>
+</div>
+
+<div class="wrapper">
+
+    <div class="calendar-box">
+        <div class="calendar-header">
+            <button onclick="prevMonth()">⬅</button>
+            <h2 id="monthYear"></h2>
+            <button onclick="nextMonth()">➡</button>
+        </div>
+
+        <div class="weekdays">
+            <span>THỨ 2</span>
+            <span>THỨ 3</span>
+            <span>THỨ 4</span>
+            <span>THỨ 5</span>
+            <span>THỨ 6</span>
+            <span class="sat">THỨ 7</span>
+            <span class="sun">CN</span>
+        </div>
+
+        <div class="calendar" id="calendar"></div>
+    </div>
+
+    <div class="event-panel">
+        <h2 id="selectedDate">Chọn ngày</h2>
+        <div id="eventList"></div>
+    </div>
+
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+
+        <div id="loginForm">
+            <h3>Đăng nhập</h3>
+            <input id="loginUser" placeholder="Tài khoản">
+            <input id="loginPass" type="password" placeholder="Mật khẩu">
+            <button onclick="handleLogin()">Đăng nhập</button>
+            <p onclick="showRegister()">Đăng ký</p>
+        </div>
+
+        <div id="registerForm" style="display:none;">
+            <h3>Đăng ký</h3>
+            <input id="regUser" placeholder="Tài khoản">
+            <input id="regPass" type="password" placeholder="Mật khẩu">
+            <button onclick="handleRegister()">Đăng ký</button>
+            <p onclick="showLogin()">Quay lại</p>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

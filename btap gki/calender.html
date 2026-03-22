@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>EventHub</title>
+    <link rel="stylesheet" href="calender.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">EventHub</div>
+
+    <nav class="menu">
+        <a>Trang chủ</a>
+        <a>Sự kiện</a>
+        <a class="active">Lịch</a>
+        <a>Liên hệ</a>
+    </nav>
+
+    <div class="right">
+        <div id="clock"></div>
+        <div id="dateNow"></div>
+
+        <div id="userBox">
+            <button onclick="login()">Đăng nhập</button>
+        </div>
+
+        <button class="support">⚡</button>
+    </div>
+</header>
+
+<div class="main">
+
+    <!-- CALENDAR -->
+    <div class="calendar" id="calendar"></div>
+
+    <!-- EVENT PANEL -->
+    <div class="event-panel">
+        <h3 id="selectedDate">Chọn ngày</h3>
+        <div id="eventList"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
