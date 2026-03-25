@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h2>ticketbox</h2>
+
+  <input type="text" placeholder="Tìm sự kiện...">
+
+  <div class="nav-actions">
+    <button onclick="openCreateEvent()">Tạo sự kiện</button>
+    <button onclick="openMyTickets()">Vé của tôi</button>
+    <button onclick="openLogin()">Đăng nhập</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Khám phá sự kiện hot 🔥</h1>
+</section>
+
+<section class="categories">
+  <button onclick="renderEvents('all')">Tất cả</button>
+  <button onclick="renderEvents('Âm nhạc')">Âm nhạc</button>
+  <button onclick="renderEvents('Hội thảo')">Hội thảo</button>
+  <button onclick="renderEvents('Công nghệ')">Công nghệ</button>
+  <button onclick="renderEvents('Startup')">Startup</button>
+  <button onclick="renderEvents('Thể thao')">Thể thao</button>
+  <button onclick="renderEvents('Vé bán lại')">Vé bán lại</button>
+  <button onclick="renderEvents('Khác')">Khác</button>
+</section>
+
+<section class="filters">
+  <input type="date" id="filterDate">
+
+  <select id="filterLocation">
+    <option value="">Tất cả địa điểm</option>
+    <option value="Hà Nội">Hà Nội</option>
+    <option value="TP.HCM">TP.HCM</option>
+  </select>
+
+  <button onclick="applyFilters()">Lọc</button>
+</section>
+
+<section class="events">
+  <div id="eventList"></div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()">×</span>
+    <h2 id="title"></h2>
+    <p id="desc"></p>
+  </div>
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="modal">
+  <div class="modal-content">
+    <span onclick="closeLogin()">×</span>
+    <h3>Đăng nhập</h3>
+    <input placeholder="Email"><br>
+    <input type="password" placeholder="Mật khẩu"><br>
+    <button>Đăng nhập</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

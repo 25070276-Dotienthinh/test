@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f6f6f6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: white;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-actions button {
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 250px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CATEGORY */
+.categories {
+  text-align: center;
+  padding: 10px;
+}
+
+.categories button {
+  margin: 5px;
+  padding: 8px;
+}
+
+/* FILTER */
+.filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* GRID */
+#eventList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.card-img {
+  position: relative;
+}
+
+.card-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* TAG */
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff4b2b;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+/* INFO */
+.info {
+  padding: 12px;
+}
+
+.info h4 {
+  margin: 5px 0;
+}
+
+/* META */
+.meta {
+  font-size: 13px;
+  color: gray;
+}
+
+/* BOTTOM */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* PRICE */
+.price {
+  color: #ff4b2b;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.buy-btn {
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+}
