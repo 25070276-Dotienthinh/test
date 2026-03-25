@@ -99,7 +99,10 @@ function renderList(data) {
       </div>
     `;
 
-    card.onclick = () => openModal(e.title, e.desc);
+    card.onclick = () => {
+    localStorage.setItem("eventDetail", JSON.stringify(e));
+    window.location.href = "detail.html";
+    };
 
     list.appendChild(card);
   });

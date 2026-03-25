@@ -153,3 +153,101 @@ body {
   padding: 20px;
   width: 300px;
 }
+/* FIX FOOTER LUÔN Ở CUỐI */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* TOP */
+.footer-top {
+  background: #3f4654;
+  color: #ccc;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px;
+  gap: 30px;
+}
+
+.footer-col h4 {
+  color: white;
+  margin-top: 15px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.hotline {
+  color: #00d26a;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* APP */
+.app img {
+  width: 140px;
+  margin-top: 10px;
+  display: block;
+}
+
+/* SOCIAL */
+.social span {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* LANG */
+.lang {
+  font-size: 22px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  background: #1c1c1c;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.footer-bottom h2 {
+  color: white;
+}
+/* DETAIL PAGE */
+.detail-banner img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.detail-container {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.detail-meta {
+  color: gray;
+}
+
+.detail-container h1 {
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
